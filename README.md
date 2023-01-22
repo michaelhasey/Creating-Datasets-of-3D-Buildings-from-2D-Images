@@ -1,4 +1,4 @@
-# Image Blending Tool
+# IFUCK YOU
 
 ## About 
 
