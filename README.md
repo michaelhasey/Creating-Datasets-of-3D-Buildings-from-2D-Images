@@ -1,10 +1,17 @@
-# IFUCK YOU
+# Creating Datasets of 3D Buildings from 2D Images
 
 ## About 
 
-This study proposes an algorithmic method to seamlessly blend two photos together into a single, natural looking rendering.  Typically, this process is complete manually via a photo editing software such as photoshop and may take tens of minutes to hours to complete depending on the size and accuracy of the final image required.  With this method, we can achieve similar, if not superior results within a fraction of the time.
+This study demonstrates a method to create large databases of 3-D buildings in any style using the recently released Neural Reflectance Surfaces (NeRS) approach. Developed at Carnegie Melon University in 2021 by Jason Zhang Et. al, NeRS is an algorithmic method that converts in-the-wild, sparse-view image datasets of objects into geometrically and texturally accurate water-tight reconstructions.  Given the increasing demand for and general scarcity of 3-D data for deep learning research and applications, this approach provides an excellent means of meeting this demand as applied to objects that have been only sparsely photographed.
 
-The aim of this study is to use image processing techniques to autonomously and efficiently identify and cutout a source image,  copy it to a specific location of a target image, modify the source image so that the indices of pixels in the source image and target image correspond, and output a natural looking and seamlessly blended image.
+
+## Why NeRS?
+
+In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting hundreds of images is impossible. For example, when the target building is innaccesible and cannot be photographged further due to geographic distance or privatye ownership, when a building no longer exists, or when there are hundreds or thousands of target buildings and capturing additional photographs of each one becomes impossible due to limited time, budget, or human capacity constraints. In this situation, NeRS provides an excellent solution to obtain 3D representation of buildings that have only been sparsely photographed.
+
+## Case Study
+
+As case study, and as the first demonstrations of the NeRS process being applied to architecture, we demonstrate the creation of a custom dataset of 331 3-D digital models of wooden churches from Carpathian Mountain regions in and around Ukraine.  Given that no more than a dozen 3-D models of these buildings exist, the Carpathian Wooden Churches of this region are an ideal candidate for this demonstration.  We then showcase a method to augment the dataset from 331 buildings to 5,627 buildings to satisfy the training dataset requirements of typical deep learning models.
 
 ![](images/intro_banner.png)
 
@@ -12,9 +19,7 @@ The aim of this study is to use image processing techniques to autonomously and 
 
 An expanded description of this model implimentation can be found on its project page here:
 
-```
-https://www.michaelhasey.com/gradient-domain-fusion
-```
+[www.michaelhasey.com/deep-vernacular-summary](www.michaelhasey.com/deep-vernacular-summary)
 
 ## Table of Contents
 
