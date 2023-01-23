@@ -38,9 +38,9 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 <br>
 
-## Reconstruction Pipeline
+## Approach
 
-### 9 Stages
+### A 9 Stage Pipeline
 
 <br>
 
