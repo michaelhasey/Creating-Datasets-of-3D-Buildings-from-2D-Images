@@ -83,7 +83,7 @@ In order to build the dataset, digital images of over 300 churches were manually
 
 The final images to be used in the 3-D reconstruction process had to be selected.  For symetrical buildings, images can be flipped horizontally to represent the opposite side of the building. 
 
-![](images/final_images.png)
+![](images/final_images2.png)
 
 #### 3) Image Editing
 
@@ -95,7 +95,7 @@ Images may need to be altered in order to ensure a succesful 3-D reconstruction.
 
 Next, object masks needed to be provided for each individual image.
 
-![](images/mask_3.png)
+![](images/mask_4.png)
 
 <br>
 
