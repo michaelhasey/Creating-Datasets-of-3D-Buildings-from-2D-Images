@@ -73,6 +73,10 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 In order to build the dataset, digital images of your object must be searched for and collected .  Images can be acquired from a number of online resoures, including, but not limited to, Google, blogs, social media platforms, and other image repositories.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process and download images automatically from multiple sources.
 
+![](images/fcompiled2.png)
+
+<br>
+
 ![](images/find_images.png)
 
 <br>
