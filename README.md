@@ -73,10 +73,6 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 In order to build the dataset, digital images of your object must be searched for and collected .  Images can be acquired from a number of online resoures, including, but not limited to, Google, blogs, social media platforms, and other image repositories.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process and download images automatically from multiple sources.
 
-![](images/fcompiled2.png)
-
-<br>
-
 ![](images/find_images.png)
 
 <br>
@@ -129,6 +125,10 @@ template shape dimensions (width, height, depth) = [0.75, 0.6, 1.0]
 #### 3.1 Automating NeRS
 
 The final images to be used in the 3-D reconstruction process are then selected.  For geometrically and texturally symetrical buildings or objects, images can be flipped horizontally to represent the opposite side of the building. 
+
+![](images/compiled2.png)
+
+<br>
 
 ![](images/final.png)
 ![](images/hutsul.gif)
