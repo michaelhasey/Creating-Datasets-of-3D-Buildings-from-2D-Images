@@ -2,7 +2,7 @@
 
 ## About 
 
-This study demonstrates a method to create large databases of 3-D buildings in any style using the recently released Neural Reflectance Surfaces (NeRS) approach. Developed at Carnegie Melon University in 2021 by Jason Zhang Et. al, NeRS is an algorithmic method that converts in-the-wild, sparse-view image datasets of objects into geometrically and texturally accurate water-tight reconstructions.  Given the increasing demand for and general scarcity of 3-D data for deep learning research and applications, this approach provides an excellent means of meeting this demand as applied to objects that have been only sparsely photographed.
+This study demonstrates a method to create large databases of 3-D buildings in any style using the recently released [Neural Reflectance Surfaces](https://jasonyzhang.com/ners/) (NeRS) approach. Developed at Carnegie Melon University in 2021 by [Jason Zhang](https://jasonyzhang.com/) Et. al, NeRS is an algorithmic method that converts in-the-wild, sparse-view image datasets of objects into geometrically and texturally accurate water-tight reconstructions.  Given the increasing demand for and general scarcity of 3-D data for deep learning research and applications, this approach provides an excellent means of meeting this demand as applied to objects that have been only sparsely photographed.
 
 ![](images/views5.png)
 ![](images/hutsul_2.gif)
