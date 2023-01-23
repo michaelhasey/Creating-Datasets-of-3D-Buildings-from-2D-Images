@@ -49,8 +49,8 @@ The following diagram and accompanying description outlines our four-step pipeli
 ![](images/process_2.png)
 
 #### Step 1: Image Search
-1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
-
+1. Image Search:   Online search for images of building to be used in reconstruction.
+2. 
 #### Step 2: NeRS Preprocessing
 2. Image Selection:   Final images showcasing all exterior sides of each church
 3. Image Editing:   Remove occlusions, correct perspective distortions, and compensate for missing images
@@ -73,7 +73,7 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 #### 1) Image Search
 
-The wooden churches used in this research reside within the mountainous, foothill and water-shed region of the Carpathian Mountain region of Central Europe.  In order to build the dataset, digital images of over 400 churches were manually searched for and collected over a one month period.  In total, over 10,000 images were collected, representing 409 unique churches from the central Carpathian Mountain region showcasing a wide range of distinct styles and sub-styles.  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.
+In order to build the dataset, digital images of over 300 churches were manually searched for and collected .  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
 
 ![](images/find_images.png)
 
