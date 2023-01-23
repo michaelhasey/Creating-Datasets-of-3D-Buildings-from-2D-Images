@@ -42,13 +42,13 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 ### A 9 Stage Pipeline
 
+The following diagram and accompanying description outlines our nine-stage pipeline for creating large training datasets of 3D buildings from sparse imagery for use in DL-based work.
+
 <br>
 
 ![](images/process_2.png)
 
 <br>
-
-The following outlines our nine-stage pipeline to create large training datasets of 3D buildings from sparse imagery for use in DL-based work.
 
 #### A) Image Search
 1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
