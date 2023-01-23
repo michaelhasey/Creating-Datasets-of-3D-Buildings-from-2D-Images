@@ -69,8 +69,6 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 ### Step 1: Image Search
 
-<br>
-
 #### 1) Image Search
 
 In order to build the dataset, digital images of over 300 churches were manually searched for and collected .  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
@@ -81,20 +79,32 @@ In order to build the dataset, digital images of over 300 churches were manually
 
 ### Step 2: NeRS Preprocessing
 
-<br>
+#### 2) Final Image Selection
 
-#### 2) Image Selection
+The final images to be used in the 3-D reconstruction process had to be selected.  For symetrical buildings, images can be flipped horizontally to represent the opposite side of the building. 
 
-Images for each church needed to be carefully pre-processed and  prepared for 3-D reconstruction. First, the final images required for the 3D reconstruction process need to be selected. Then, some images were altered in order to ensure their associated church was accurately reconstructed in 3D. For example, images occasionally had to be manually edited or constructed to provide the front or rear elevations.
+![](images/final_images.png)
+
+
+#### 3) Image Editing
+
+Images may need to be altered in order to ensure a succesful 3-D reconstruction. For example, images occasionally had to be manually edited or constructed to provide the front or rear elevations.  Occlusions blocking the target building object may also need to be removed.
 
 ![](images/image_edit.png)
 
-Next, object masks needed to be provided for each individual image. Then, both the horizontal and vertical camera angle between the camera and the church for each image was manually recorded to a JSON file. Next, a custom script was created to automatically duplicate images and horizontally flip them to represent the other side of the building. Finally, the dimensions of a shape template corresponding to the estimated approximate size of each church must be determined 
+#### 4) Image Masking
 
-![](images/masks.png)
+Next, object masks needed to be provided for each individual image.
+
+![](images/mask_2.png)
 
 <br>
 
+#### 4) Parameter Setting
+
+Both the horizontal and vertical camera angle between the camera and the church for each image was manually recorded to a JSON file. Next, a custom script was created to automatically duplicate images and horizontally flip them to represent the other side of the building. Finally, the dimensions of a shape template corresponding to the estimated approximate size of each church must be determined 
+ 
+ 
 #### 3) Image Editing
 
 Once all images have been preprocessed and their corresponding JSON files complete, the final stage of the reconstruction pipeline (Figure 113) was reached and each church was reconstructed from the images as a high-quality detailed mesh object using the NeRS algorithm.  To reconstruct each church a remote computing cluster containing 4 GPUs (NVidia GeForce GTX Titan X with 12 GB of VRAM) was used to expedite this process. Once completed, the reconstruction quality of each church was manually inspected. Out of the original 409 churches, 96 could not be recon-structed due to insufficient imagery.
