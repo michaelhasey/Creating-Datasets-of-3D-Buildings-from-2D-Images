@@ -168,21 +168,22 @@ Depending on the DL model used, the data format of the augmented 3-D dataset may
 
 The final augmented dataset includes 331 unique wooden churches augmented to 5627 voxel files, each being 129 kb, leading to a total dataset size of 725.88 MB
 
+<br>
+
 ![](images/results.png)
 
 ![](images/331.png)
 
-
-
-
-
-
-
-
+<br>
 
 ## References
 
-This project was completed as part of Carnegie Melon University's Learning Based Image Synthesis course 16 726 taught by Jun-Yan Zhu in Spring of 2021.
+This project was completed as part of my graduate thesis at Carnegie Mellon University entitled "The 3D Form Analysis of Regional Architecture Using Deep Learning: A Case Study of Wood Churches from the Carpathian Mountains".  The full thesis has been presented in various formats and can be found here:
+
+1. [Book Format](https://www.michaelhasey.com/publication-deep-vernacular)
+2. [Online Summary](https://www.michaelhasey.com/deep-vernacular-summary)
+3. [Official Thesis Document](https://kilthub.cmu.edu/articles/thesis/The_3D_Form_Analysis_of_Regional_Architecture_Using_Deep_Learning_A_Case_Study_of_Wood_Churches_from_the_Carpathian_Mountains/21291672)
+4. Publication (upcoming Summer 2023)
 
 ## Citation
 
@@ -190,7 +191,7 @@ If you find this project useful in your research, please consider citing:
 
 ``` 
 @misc{mhasey2021,
-    title={Image Blending Tool},
+    title={Creating Datasets of 3D Buildings from 2d Images},
     author={Michael Hasey},
     year={2021},
 }
