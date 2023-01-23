@@ -22,9 +22,13 @@ An expanded description of this model implimentation can be found on its project
 - [References](#References)
 - [Citation](#Citation)
 
+<br>
+
 ## Why NeRS?
 
 In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting hundreds of images is impossible. For example, when the target building is innaccesible and cannot be photographged further due to geographic distance or privatye ownership, when a building no longer exists, or when there are hundreds or thousands of target buildings and capturing additional photographs of each one becomes impossible due to limited time, budget, or human capacity constraints. In this situation, NeRS provides an excellent solution to obtain 3D representation of buildings that have only been sparsely photographed.
+
+<br>
 
 ## Case Study
 
@@ -32,9 +36,32 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 ![](images/recons.png)
 
+<br>
+
 ## Approach
 
-Constructing a dataset of 3D churches using NeRS and then preparing it for DL-based experiments requires a nine-stage work-flow (Figure 90): 1) a broad search for churches and acquisition of exterior church images; 2) selection of the final images showcasing all exterior sides of each church; 3) editing the images to remove occlusions, correct perspective distortions, and compensate for missing images; 4) creating image masks representing the location and outline of the church; 5) estimating image angles between the camera and the church; 6) estimating the general dimensions of the churches (length, width, and height) ; 7) reconstructing a high-quality detailed 3D mesh object, 8) Augmenting the data from 331 churches to 5627 models, 9) converting the models to SDF voxel format. 
+### 9 Stage Pipeline
+
+A nine-stage work-flow broken into four sections is required to create a dataset of 3D buildings from sparse imagery using NeRS and perpare it for DL training.
+
+#### Image Preprocessing
+1. Image Search:   Broad search for churches and acquisition of exterior church images.
+2. Image Selection:   Final images showcasing all exterior sides of each church
+3. Image Editing:   Remove occlusions, correct perspective distortions, and compensate for missing images
+
+#### NeRS Preprocessing
+4. Image Masking:  Creating image masks around the outline of the church
+5. Camera Angle Estimation:    Estimating image angles between the camera and the church
+6. Setting Template Shape Dimensions:   Estimating the general dimensions of the churches (length, width, and height)
+
+#### NeRS 3-D Reconstruction
+7. NeRS 3-D Reconstruction:   Reconstructing a high-quality detailed 3D mesh object
+
+#### Data Augmentation & Formatting
+8. Data Augmentation:   Augmenting the data from 331 churches to 5627 models
+9. Data Formatting:   converting the models to the appropriate format for DL Model Input (SDF voxel format for this example).
+
+<br>
 
 ![](images/process_2.png)
 
