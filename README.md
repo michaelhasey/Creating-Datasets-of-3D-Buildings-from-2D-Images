@@ -60,7 +60,7 @@ The following diagram and accompanying description outlines our four-step pipeli
 5. Parameter Setting:    Estimating image angles between the camera and the church
 6. Template Shape Estimation:   Estimating the general dimensions of the churches (length, width, and height)
 
-#### Step 3: 3-D Reconstruction 
+#### Step 3: NeRS 3-D Reconstruction 
 7. NeRS Reconstruction:   Automated 3-D reconstruction of all buildings into high quality detailed mesh objects.
 
 #### Step 4: Data Augmentation & Formatting
