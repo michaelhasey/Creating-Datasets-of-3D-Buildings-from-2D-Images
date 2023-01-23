@@ -95,7 +95,7 @@ Images may need to be altered in order to ensure a succesful 3-D reconstruction.
 
 Next, object masks needed to be provided for each individual image.
 
-![](images/mask_2.png)
+![](images/mask_3.png)
 
 <br>
 
