@@ -85,7 +85,6 @@ The final images to be used in the 3-D reconstruction process had to be selected
 
 ![](images/final_images.png)
 
-
 #### 3) Image Editing
 
 Images may need to be altered in order to ensure a succesful 3-D reconstruction. For example, images occasionally had to be manually edited or constructed to provide the front or rear elevations.  Occlusions blocking the target building object may also need to be removed.
