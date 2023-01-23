@@ -48,8 +48,6 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 ![](images/process_2.png)
 
-<br>
-
 #### Step 1: Image Search
 1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
 
@@ -67,17 +65,25 @@ The following diagram and accompanying description outlines our four-step pipeli
 8. Data Augmentation:   Augmenting the data from 331 churches to 5627 models
 9. Data Formatting:   converting the models to the appropriate format for DL Model Input (SDF voxel format for this example).
 
+<br>
 
-### Step 1:  Searching for Churches & Collecting Imagery
-
-The wooden churches used in this research reside within the mountainous, foothill and water-shed region of the Carpathian Mountain region of Central Europe.  In order to build the dataset, digital images of over 400 churches were manually searched for and collected over a one month period.  In total, over 10,000 images were collected, representing 409 unique churches from the central Carpathian Mountain region showcasing a wide range of distinct styles and sub-styles.  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.
-
-![](images/map.png)
-![](images/data.png)
+### Step 1: Image Search
 
 <br>
 
-### Step 2:  Image Pre-Processing
+#### 1) Image Search
+
+The wooden churches used in this research reside within the mountainous, foothill and water-shed region of the Carpathian Mountain region of Central Europe.  In order to build the dataset, digital images of over 400 churches were manually searched for and collected over a one month period.  In total, over 10,000 images were collected, representing 409 unique churches from the central Carpathian Mountain region showcasing a wide range of distinct styles and sub-styles.  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.
+
+![](images/find_images.png)
+
+<br>
+
+### Step 2: NeRS Preprocessing
+
+<br>
+
+#### 2) Image Selection
 
 Images for each church needed to be carefully pre-processed and  prepared for 3-D reconstruction. First, the final images required for the 3D reconstruction process need to be selected. Then, some images were altered in order to ensure their associated church was accurately reconstructed in 3D. For example, images occasionally had to be manually edited or constructed to provide the front or rear elevations.
 
@@ -89,7 +95,7 @@ Next, object masks needed to be provided for each individual image. Then, both t
 
 <br>
 
-### Step 3:  Reconstructing Churches in 3-D
+#### 3) Image Editing
 
 Once all images have been preprocessed and their corresponding JSON files complete, the final stage of the reconstruction pipeline (Figure 113) was reached and each church was reconstructed from the images as a high-quality detailed mesh object using the NeRS algorithm.  To reconstruct each church a remote computing cluster containing 4 GPUs (NVidia GeForce GTX Titan X with 12 GB of VRAM) was used to expedite this process. Once completed, the reconstruction quality of each church was manually inspected. Out of the original 409 churches, 96 could not be recon-structed due to insufficient imagery.
 
