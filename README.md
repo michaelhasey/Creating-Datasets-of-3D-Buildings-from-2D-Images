@@ -141,42 +141,39 @@ To reconstruct each church a remote computing cluster containing 4 GPUs (NVidia 
 
 <br>
 
+### Step 4: DL Pre-Processing
 
+#### 4.1 Data Augmentation
 
-
-
-
-
-
-
-
-
-#### 3) Image Editing
-
-Once all images have been preprocessed and their corresponding JSON files complete, the final stage of the reconstruction pipeline (Figure 113) was reached and each church was reconstructed from the images as a high-quality detailed mesh object using the NeRS algorithm.  To reconstruct each church a remote computing cluster containing 4 GPUs (NVidia GeForce GTX Titan X with 12 GB of VRAM) was used to expedite this process. Once completed, the reconstruction quality of each church was manually inspected. Out of the original 409 churches, 96 could not be recon-structed due to insufficient imagery.
-
-![](images/compiled.png)
-
-The dataset of reconstructed churches includes 313 individual buildings (Figure 115, 116). The dataset were then automatically augmented from 313 buildings to 5,627 buildings using an algorithm that made slightly different copies of each building through a series of random rotation and scaling transformations. 
-
-![](images/boyko_2.gif)
-![](image/hutsul.gif)
-![](images/lemk_unique.gif)
-![](images/lemk_classic.gif)
-![](images/transcar.gif)
-![](images/boyko.gif)
+In order to meet the large training data volume requirements of typical DL models, the number of 3-D objects may need to artificially enlarged using data augmentation techniques.  For this case study, the 313 3-D reconstructed churches were augmented to 5,627 buildings. Data augmentation is common technique if the dataset is insufficiently large to train a DL-model and helps prevent overfitting [32]. Overfitting is when a model begins to memorize hyper-specific features of the data, rather than more useful general features of the data that might help better describe it as a whole. To avoid overfitting, the dataset was augmented to be 17X its original size by making 17 copies of each building, with each copy being slightly different from the next through a series of transformations such as rotation and randomly scaling. To expedite this process, a custom script and data pipeline was created in Grasshopper, a parametric design software used to create and manipulate 3D geometry.
 
 <br>
 
-![](images/spread_1.png)
+![](images/augment_2.png)
 
 <br>
 
-### Step 4: Augment Dataset using Synthetic Data
+#### 4.2 Data Formatting
 
-In order to sufficiently train the DL network and extract a reasonable latent space distribution, where latent space is a representation of abstracted data where similar data points are clustered closer to-gether, the dataset needed to be augmented from 313 buildings to 5,627 buildings. Data augmenta-tion is common technique if the dataset is insufficiently large to train a DL-model and helps prevent overfitting [32]. Overfitting is when a model begins to memorize hyper-specific features of the data, rather than more useful general features of the data that might help better describe it as a whole. To avoid overfitting, the dataset was augmented to be 17X its original size by making 17 copies of each building, with each copy being slightly different from the next through a series of transformations such as rotation and randomly scaling. To expedite this process, a custom script and data pipeline was created in Grasshopper, a parametric design software used to create and manipulate 3D geometry. 
+Depending on the DL model used, the data format of the augmented 3-D dataset may need be changed.  For this case study, we converted all 5,627 mesh models into voxels in order for them to be compatible to our particular model's underlying image-oriented architecture.
 
-![](images/augment.png)
+<br>
+
+![](images/formatting.png)
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## References
 
