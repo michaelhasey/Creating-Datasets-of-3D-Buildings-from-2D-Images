@@ -9,7 +9,7 @@ This study demonstrates a method to create large databases of 3-D buildings in a
 
 ## Project Page
 
-An expanded description of this model implimentation can be found on its project page here:
+An expanded description of this project can be found on its project page here:
 
 [www.michaelhasey.com/deep-vernacular-summary](www.michaelhasey.com/deep-vernacular-summary)
 
@@ -193,6 +193,6 @@ If you find this project useful in your research, please consider citing:
 @misc{mhasey2021,
     title={Creating Datasets of 3D Buildings from 2d Images},
     author={Michael Hasey},
-    year={2021},
+    year={2022},
 }
 ```
