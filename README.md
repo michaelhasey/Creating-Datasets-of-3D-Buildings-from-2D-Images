@@ -164,8 +164,13 @@ Depending on the DL model used, the data format of the augmented 3-D dataset may
 <br>
 
 
+## Results
 
+The final augmented dataset includes 331 unique wooden churches augmented to 5627 voxel files, each being 129 kb, leading to a total dataset size of 725.88 MB
 
+![](images/results.png)
+
+![](images/331.png)
 
 
 
