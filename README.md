@@ -7,16 +7,6 @@ This study demonstrates a method to create large databases of 3-D buildings in a
 ![](images/views4.png)
 ![](images/hutsul_2.gif)
 
-## Why NeRS?
-
-In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting hundreds of images is impossible. For example, when the target building is innaccesible and cannot be photographged further due to geographic distance or privatye ownership, when a building no longer exists, or when there are hundreds or thousands of target buildings and capturing additional photographs of each one becomes impossible due to limited time, budget, or human capacity constraints. In this situation, NeRS provides an excellent solution to obtain 3D representation of buildings that have only been sparsely photographed.
-
-## Case Study
-
-As case study, and as the first demonstrations of the NeRS process being applied to architecture, we demonstrate the creation of a custom dataset of 331 3-D digital models of wooden churches from Carpathian Mountain regions in and around Ukraine.  Given that no more than a dozen 3-D models of these buildings exist, the Carpathian Wooden Churches of this region are an ideal candidate for this demonstration.  We then showcase a method to augment the dataset from 331 buildings to 5,627 buildings to satisfy the training dataset requirements of typical deep learning models.
-
-![](images/data_open.png)
-
 ## Project Page
 
 An expanded description of this model implimentation can be found on its project page here:
@@ -31,6 +21,16 @@ An expanded description of this model implimentation can be found on its project
 - [Performance](#Performance)
 - [References](#References)
 - [Citation](#Citation)
+
+## Why NeRS?
+
+In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting hundreds of images is impossible. For example, when the target building is innaccesible and cannot be photographged further due to geographic distance or privatye ownership, when a building no longer exists, or when there are hundreds or thousands of target buildings and capturing additional photographs of each one becomes impossible due to limited time, budget, or human capacity constraints. In this situation, NeRS provides an excellent solution to obtain 3D representation of buildings that have only been sparsely photographed.
+
+## Case Study
+
+As case study, and as the first demonstrations of the NeRS process being applied to architecture, we demonstrate the creation of a custom dataset of 331 3-D digital models of wooden churches from Carpathian Mountain regions in and around Ukraine.  Given that no more than a dozen 3-D models of these buildings exist, the Carpathian Wooden Churches of this region are an ideal candidate for this demonstration.  We then showcase a method to augment the dataset from 331 buildings to 5,627 buildings to satisfy the training dataset requirements of typical deep learning models.
+
+![](images/recons.png)
 
 ## Approach
 
