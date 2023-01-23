@@ -71,7 +71,7 @@ The following diagram and accompanying description outlines our four-step pipeli
 
 #### 1) Image Search
 
-In order to build the dataset, digital images of over 300 churches were manually searched for and collected .  Images were acquired from a number of online resoures, including, but not limited to, Google Earth, various academics and domain experts, various blogs, and multiple image repositories that specialize in historic architecture of this region.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
+In order to build the dataset, digital images of your object must be searched for and collected .  Images can be acquired from a number of online resoures, including, but not limited to, Google, blogs, social media platforms, and other image repositories.   [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process and download images automatically from multiple sources.
 
 ![](images/find_images.png)
 
@@ -81,13 +81,13 @@ In order to build the dataset, digital images of over 300 churches were manually
 
 #### 2) Final Image Selection
 
-The final images to be used in the 3-D reconstruction process had to be selected.  For symetrical buildings, images can be flipped horizontally to represent the opposite side of the building. 
+The final images to be used in the 3-D reconstruction process are then selected.  For geometrically and texturally symetrical buildings or objects, images can be flipped horizontally to represent the opposite side of the building. 
 
 ![](images/final_images2.png)
 
 #### 3) Image Editing
 
-Images may need to be altered in order to ensure a succesful 3-D reconstruction. For example, images occasionally had to be manually edited or constructed to provide the front or rear elevations.  Occlusions blocking the target building object may also need to be removed.
+Images may need to be altered in order to ensure a succesful 3-D reconstruction. For example, missing front or rear elevations had to be created.  Occlusions blocking the target building object also had to be removed in some cases.
 
 ![](images/image_edit.png)
 
