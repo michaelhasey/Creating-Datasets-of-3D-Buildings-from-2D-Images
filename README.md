@@ -44,20 +44,20 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 A nine-stage work-flow broken into four sections is required to create a dataset of 3D buildings from sparse imagery using NeRS and perpare it for DL training.
 
-#### Image Preprocessing
-1. Image Search:   Broad search for churches and acquisition of exterior church images.
+#### A) Image Search
+1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
+
+#### B) NeRS Preprocessing
 2. Image Selection:   Final images showcasing all exterior sides of each church
 3. Image Editing:   Remove occlusions, correct perspective distortions, and compensate for missing images
-
-#### NeRS Preprocessing
 4. Image Masking:  Creating image masks around the outline of the church
-5. Camera Angle Estimation:    Estimating image angles between the camera and the church
-6. Setting Template Shape Dimensions:   Estimating the general dimensions of the churches (length, width, and height)
+5. Parameter Setting:    Estimating image angles between the camera and the church
+6. Template Shape Estimation:   Estimating the general dimensions of the churches (length, width, and height)
 
-#### NeRS 3-D Reconstruction
-7. NeRS 3-D Reconstruction:   Reconstructing a high-quality detailed 3D mesh object
+#### C) NeRS 3-D Reconstruction
+7. Automated 3-D Reconstruction:   Reconstructing a high-quality detailed 3D mesh object
 
-#### Data Augmentation & Formatting
+#### d) Data Augmentation & Formatting
 8. Data Augmentation:   Augmenting the data from 331 churches to 5627 models
 9. Data Formatting:   converting the models to the appropriate format for DL Model Input (SDF voxel format for this example).
 
