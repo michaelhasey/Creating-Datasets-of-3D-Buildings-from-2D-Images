@@ -40,9 +40,9 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 ## Approach
 
-### A 9 Stage Pipeline
+### A 4 Step Pipeline
 
-The following diagram and accompanying description outlines our nine-stage pipeline for creating large training datasets of 3D buildings from sparse imagery for use in DL-based work.
+The following diagram and accompanying description outlines our four-step pipeline for creating large training datasets of 3D buildings from sparse imagery for use in DL-based work.  
 
 <br>
 
@@ -50,20 +50,20 @@ The following diagram and accompanying description outlines our nine-stage pipel
 
 <br>
 
-#### A) Image Search
+#### Step 1: Image Search
 1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
 
-#### B) NeRS Preprocessing
+#### Step 2: NeRS Preprocessing
 2. Image Selection:   Final images showcasing all exterior sides of each church
 3. Image Editing:   Remove occlusions, correct perspective distortions, and compensate for missing images
 4. Image Masking:  Creating image masks around the outline of the church
 5. Parameter Setting:    Estimating image angles between the camera and the church
 6. Template Shape Estimation:   Estimating the general dimensions of the churches (length, width, and height)
 
-#### C) NeRS 3-D Reconstruction
-7. Automated 3-D Reconstruction:   Reconstructing a high-quality detailed 3D mesh object
+#### Step 3: 3-D Reconstruction 
+7. NeRS Reconstruction:   Automated 3-D reconstruction of all buildings into high quality detailed mesh objects.
 
-#### d) Data Augmentation & Formatting
+#### Step 4: Data Augmentation & Formatting
 8. Data Augmentation:   Augmenting the data from 331 churches to 5627 models
 9. Data Formatting:   converting the models to the appropriate format for DL Model Input (SDF voxel format for this example).
 
