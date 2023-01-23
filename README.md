@@ -26,7 +26,7 @@ An expanded description of this model implimentation can be found on its project
 
 ## Why NeRS?
 
-In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting hundreds of images is impossible. For example, when the target building is innaccesible and cannot be photographged further due to geographic distance or privatye ownership, when a building no longer exists, or when there are hundreds or thousands of target buildings and capturing additional photographs of each one becomes impossible due to limited time, budget, or human capacity constraints. In this situation, NeRS provides an excellent solution to obtain 3D representation of buildings that have only been sparsely photographed.
+In ideal conditions, building images can be easily reconstructed into highly accurate 3D representations by using photograpmmetry software like Bently System’s “ContextCapture” or Epic Game’s “Reality Capture” programs. However, these systems, like many others, require hundreds or thousands of images of a target object to reconstruct it in 3D. However, there are many situations where collecting or taking hundreds of images of a single object is impossible. For example, when the target building is innaccesible, if it no longer exists, or when there are too many objects to realistically capture by a single or even group of people.  For instance, if wanting to reconstruct hundreds of buildings in 3-D. In this situation, NeRS provides an excellent solution to reconstruct 3D building representations from as few as 6-8 photographs per object. 
 
 <br>
 
@@ -38,11 +38,17 @@ As case study, and as the first demonstrations of the NeRS process being applied
 
 <br>
 
-## Approach
+## Reconstruction Pipeline
 
-### 9 Stage Pipeline
+### 9 Stages
 
-A nine-stage work-flow broken into four sections is required to create a dataset of 3D buildings from sparse imagery using NeRS and perpare it for DL training.
+<br>
+
+![](images/process_2.png)
+
+<br>
+
+The following outlines our nine-stage pipeline to create large training datasets of 3D buildings from sparse imagery for use in DL-based work.
 
 #### A) Image Search
 1. Image Search:   Online search for images of building to be used in reconstruction.  [Archi_Base](https://github.com/michaelhasey/Archi_Base) can be used to expedite this process. 
@@ -61,11 +67,6 @@ A nine-stage work-flow broken into four sections is required to create a dataset
 8. Data Augmentation:   Augmenting the data from 331 churches to 5627 models
 9. Data Formatting:   converting the models to the appropriate format for DL Model Input (SDF voxel format for this example).
 
-<br>
-
-![](images/process_2.png)
-
-<br>
 
 ### Step 1:  Searching for Churches & Collecting Imagery
 
