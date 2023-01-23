@@ -124,15 +124,22 @@ template shape dimensions (width, height, depth) = [0.75, 0.6, 1.0]
 
 #### 3.1 Automating NeRS
 
-The final images to be used in the 3-D reconstruction process are then selected.  For geometrically and texturally symetrical buildings or objects, images can be flipped horizontally to represent the opposite side of the building. 
+Once all images have been preprocessed and their corresponding JSON files complete, the final stage of the reconstruction
+pipeline (Figure 113) was reached and each church was reconstructed from the images as a high-quality detailed mesh object
+using the NeRS algorithm.
+
+<br>
 
 ![](images/compiled2.png)
+
+To reconstruct each church a remote computing cluster containing 4 GPUs (NVidia GeForce GTX Titan X with 12 GB of VRAM) was used to expedite this process. Once completed, the reconstruction quality of each church was manually inspected.  Churches displaying unsatisfactory reconstructions were modified accordingly (image and image parameter modifications) and then reconstructed again locally until satisfactory reconstruction results were achieved. Churches that could not achieve satisfactory reconstruction results were discarded. Out of the original 409 churches, 96 could not be reconstructed due to insufficient imagery.
 
 <br>
 
 ![](images/final.png)
 ![](images/hutsul.gif)
 
+<br>
 
 
 
